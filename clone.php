@@ -33,11 +33,12 @@
 //                &lt;/table&gt;
                 //&lt;/div&gt;
     
-      $i=2;
+   $i=2;
    $nomor=1;
+   $aa = 1;
       while($i <= count($ambil_kata_lagi)-1){
         
-        $a = htmlentities($ambil_kata_lagi[$i]); 
+  $a = htmlentities($ambil_kata_lagi[$i]); 
   $b = htmlentities($ambil_kata_lagi[0]); 
 
 
@@ -76,7 +77,7 @@
   $lstatus= ltrim($pecahan[6]," ");
   $harga = array("kode" => "$lkode", "nama" => "$lnama", "harga" => "$lharga", "status" => "$lstatus");
   $kodenya = $harga['kode'];
-  $list[$kodenya] = $harga;
+  $list[$aa++] = $harga;
   $nomor++;
   $i++;
       }
